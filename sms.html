@@ -1,0 +1,92 @@
+<! Doctype html>
+<html>
+    <head>
+        <title>Eddy's Website</title>
+        <link rel="stylesheet" type="text/css" href="normalize.css"> <!-- adding normalize stylesheet-->
+        <link rel="stylesheet" type="text/css" href="main.css"> <!-- adding style sheet for customizing projects-->
+    </head>
+        <body>
+	            <!-- page details -->
+	        <h1><font color="red">Eddy's Website</font></h1>
+	            <table border="10%" align = "center" width = "1000">
+                    <tr>
+                        <!-- Setting the title page -->
+                        <th colspan="10"><a href="index.html">Home</a></th>
+                        <th colspan="10"><a href="Projects.html">Projects</a></th>
+                        <th colspan="10"><a href="JobOpp.html">Job Oppuntunity</a></th>
+                        <th colspan="10"><a href="future.html">The Future</a></th>
+                        <th colspan="10"><a href="about.html">About Me</a></th>
+                    </tr>
+                </table>
+
+            <br>
+                    <!-- value for drop down list-->
+                <center><h2><font size="6">Developed Projects</font></h2></center>
+                <center><p>Below are list of personally developed projects and common projects developed in Computer Science</p></center>
+
+                <center><div class="dropdown">
+                      <button class="dropbtn">Dropdown List</button>
+                      <div class="dropdown-content">
+                      <a href="sms.html">SMS</a>
+                      <a href="ctis.html">CTIS</a>
+                      <a href="rms.html">RMS</a>
+                  </div>
+                </div></center>
+
+                <center><br><h3><font size="6">Title: School Management System</font></h3>
+                    <div class="slideshow-container">
+                    <div class="mySlides fade">
+                    <img src="logIn.png" style="width:304px; height:228px;">
+                    <div class="text">Log In Page</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="mainmnu.png" style="width:304px; height:228px;">
+                    <div class="text">Main Menu</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="regis.png" style="width:304px; height:228px;">
+                    <div class="text">Registrating Class</div>
+                </div>
+
+            </div></center>
+        <br>
+
+                <div style="text-align:center">
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+                    </div>
+                    <!-- Setting the value for slides -->
+                <script>
+                var slideIndex = 0;
+                showSlides();
+                
+                function showSlides() {
+                    var i;
+                    var slides = document.getElementsByClassName("mySlides");
+                    var dots = document.getElementsByClassName("dot");
+                    for (i = 0; i < slides.length; i++) {
+                       slides[i].style.display = "none";  
+                    }
+                    slideIndex++;
+                    if (slideIndex> slides.length) {slideIndex = 1}    
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex-1].style.display = "block";  
+                    dots[slideIndex-1].className += " active";
+                    setTimeout(showSlides, 3000); // Change image every 3 seconds
+                }
+                </script>
+            </div>
+            <!-- Image Documentation -->
+                  <div class="eddy">
+                       <p>A desktop program used to manage the various activities and procedures in the college. 
+                          It includes interface for registration of classes, new students, details about each faculty and colleges and various classes available for a semester.
+                          This program is been used in Obong University, Nigeria presently.
+                          <a target="_blank" href= "http://www.managingfordevelopmentresults.org/documents/results-basedmanagementdiscussionpaper.pdf"><font color="orange">Click for More Info</font></a>
+	
+        </body>
+</html>

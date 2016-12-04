@@ -1,0 +1,20 @@
+.article {  /* setting the title bar and border */
+              padding: 1em;
+              -moz-column-count: 3;
+              -moz-column-gap: 1em;
+              -webkit-column-count: 3;
+              -webkit-column-gap: 3em;
+              column-count: 3;
+              column-gap: 2em;
+              -webkit-column-rule-style: solid; /* Chrome, Safari, Opera */
+              -moz-column-rule-style: solid; /* Firefox */
+                }
+            
+body {     /* Setting the background picture */
+              background-image: url("blue.jpg");
+                background-repeat: no-repeat;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+                }
